@@ -91,7 +91,7 @@ func main() {
 		return
 	}
 
-	fmt.Printf("Курс USD/UAH: %.2f\n", exchangeRate)
+	fmt.Printf("Курс USD/UAH: %f\n", exchangeRate)
 
 	if err := sendEvent(exchangeRate); err != nil {
 		fmt.Printf("Сталася помилка: %v\n", err)
